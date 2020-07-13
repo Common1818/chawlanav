@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./final.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script defer>
+        const handleNav = () => {
+            $('#appNavOptions').removeClass('hidden-xs')
+
+            setTimeout(() => {
+                $('#appNavOptions').removeClass('hiddenTransform')
+            }, 200);
+        }
+        const handleCloseNav = () => {
+            $('#appNavOptions').addClass('hiddenTransform')
+            setTimeout(() => {
+                $('#appNavOptions').addClass('hidden-xs')
+            }, 300);
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="appNavParent" id="appNavParent">
+
+        <div class="appProcessBar hiddenTransform" id="appProcessBar">
+            <div class="theBar"></div>
+        </div>
+
+
+        <div class="cmbRow topRow graidentBar">
+            <div class="appIcon">
+                <a href="/">
+
+                    <img src="https://choosemybicycle.s3.ap-south-1.amazonaws.com/cmb-website-icons/company-logos/cmb-logo-mobile.png" class="img-responsive center-block visible-xs" alt="ChooseMyBicycle.com" title="ChooseMyBicycle.com" />
+
+                    <img src="https://choosemybicycle.s3.ap-south-1.amazonaws.com/static/icons/app-icons/app-nav-logo.svg" class="img-responsive center-block hidden-xs" alt="ChooseMyBicycle.com" title="ChooseMyBicycle.com" />
+                </a>
+            </div>
+            <div class="appControls">
+                <div class="cmbRow controlRow">
+
+                    <div class="segment visible-xs" onclick="handleNav()" id="menuTrigger">
+                        <div class="cmbRow">
+                            <img src="https://choosemybicycle.s3.ap-south-1.amazonaws.com/static/icons/navigation/menu-icon-white.svg" class="img-responsive center-block menuIcon" alt="Menu" title="Menu" />
+                        </div>
+                    </div>
+
+                    <div class="segment hidden-xs login" id="appLoginTrigger">
+                        <div class="cmbRow">
+                            <img src="https://choosemybicycle.s3.ap-south-1.amazonaws.com/static/icons/navigation/user-account-white.svg" class="img-responsive center-block userIcon" alt="Login" title="Login" /> Login/Create Account
+                        </div>
+                        <div class="loginPrompter hide hiddenTransform" id="loginPrompter">
+                            <p>Hello There and Welcome! <br />To get started, click here to Login To Your Account or Create a New Account with ChooseMyBicycle.com</p>
+                            <button class="defaultButton primaryGreen" type="button">OK GOT IT!</button>
+                        </div>
+                    </div>
+
+                    <div class="segment support hidden-xs">
+                        <a href="/en/help-center">
+                            <img src="https://choosemybicycle.s3.ap-south-1.amazonaws.com/static/icons/navigation/support-icon-white.svg" class="img-responsive center-block userIcon" alt="Support" title="Support" /> Support
+                        </a>
+                    </div>
+
+                    <div class="segment visible-xs" id="mobileSearchTrigger">
+                        <div class="cmbRow">
+                            <img src="https://choosemybicycle.s3.ap-south-1.amazonaws.com/static/icons/navigation/search-icon-white.svg" class="img-responsive center-block userIcon" alt="Search" title="Search" />
+                        </div>
+                    </div>
+
+                    <div class="segment cart" id="appCartIcon">
+                        <a href="/en/cart">
+                            <img src="https://choosemybicycle.s3.ap-south-1.amazonaws.com/static/icons/navigation/shopping-cart-white.svg" class="img-responsive center-block menuIcon" alt="Cart" title="Cart" />
+                            <span>Cart</span>
+                        </a>
+                    </div>
+
+
+                    <div class="segment hidden-xs trackYourOrder">
+                        <a href="/en/track-your-order">
+                            <img src="https://choosemybicycle.s3.ap-south-1.amazonaws.com/static/icons/navigation/location-icon-white.svg" class="img-responsive center-block menuIcon" alt="Track Order" title="Track Order" /> Track Order
+                        </a>
+                    </div>
+
+                    <div class="segment hidden-xs covid19">
+                        <a href="/en/choosemybicycle-com-response-to-covid-19">
+                            <img src="https://choosemybicycle.s3.ap-south-1.amazonaws.com/cmb-documentation-tncs/covid-shield-ffffff.svg" class="img-responsive center-block menuIcon" alt="ChooseMyBicycle.com - Covid 19 Response" title="ChooseMyBicycle.com - Covid 19 Response" />                            CMB's Covid 19 Response
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cmbRow topRow menuRow">
+
+            <div class="appNavOptions hidden-xs hiddenTransform" id="appNavOptions">
+                <button class="defaultButton secondaryBlack visible-xs closerButton" onclick="handleCloseNav()" id="closeSearchBar">
+                            <img src="https://choosemybicycle.s3.ap-south-1.amazonaws.com/static/icons/buttons/x-mark-black.svg"
+                                class="img-responsive center-block" alt="Close" title="Close" />
+                        </button>
+
+                <div class="topNavLogo visible-xs">
+                    <img src="https://choosemybicycle.s3.ap-south-1.amazonaws.com/cmb-website-icons/company-logos/cmb-logo-mobile.png" class="img-responsive center-block" alt="ChooseMyBicycle" title="ChooseMyBicycle" />
+                </div>
+
+                <ul class="list-unstyled topLevelNav">
+
+                    <li class="userAccount aniList aniList-one visible-xs hide" id="mobileAppLoginTrigger">
+                        <span class="h">Login/Create New Account</span>
+                    </li>
+
+
+                    <li class="appLink saleBand aniList aniList-eight visible-xs">
+                        <a href="/en/clearance-sale?utm_source=cmb&utm_medium=banner&utm_campaign=nav_clearance_sale_link">
+                            <span class="h">Clearance Sale</span>
+                        </a>
+                    </li>
+
+                    <li class="appDropdown macroDropdown aniList aniList-two">
+                        <a href="/en/bicycles"><span id="dropBicycles" class="h op">Bicycles</span></a>
+                        <div class="subMenuContainer hideOnlyMobile">
+                            <ul class="list-unstyled subList cmbRow">
+                                <li class="appDropdown">
+                                    <span class="h byUsers hideOnlyMobile">By Users</span>
+                                    <ul class="list-unstyled linksList hideOnlyMobile">
+                                        <li><a href="/en/bicycles/women">Women</a></li>
+                                        <li><a href="/en/bicycles/men">Men</a></li>
+                                        <li><a href="/en/bicycles/youth-girls">Youth Girls</a></li>
+                                        <li><a href="/en/bicycles/youth-boys">Youth Boys</a></li>
+                                        <li><a href="/en/bicycles/kids-girls">Kids Girls</a></li>
+                                        <li><a href="/en/bicycles/kids-boys">Kids Boys</a></li>
+                                        <li><a href="/en/bicycles/toddler-girls">Toddler Girls</a></li>
+                                        <li><a href="/en/bicycles/toddler-boys">Toddler Boys</a></li>
+                                    </ul>
+                                </li>
+                                <li class="appDropdown">
+                                    <span class="h byCat hideOnlyMobile">By Categories</span>
+                                    <ul class="list-unstyled linksList hideOnlyMobile">
+                                        <li><a href="/en/bicycles/city">City</a></li>
+                                        <li><a href="/en/bicycles/hybrid">Hybrid</a></li>
+                                        <li><a href="/en/bicycles/mtb">MTB</a></li>
+                                        <li><a href="/en/bicycles/road">Road</a></li>
+                                        <li><a href="/en/bicycles/e-bicycles">E-Bicycles</a></li>
+                                        <li><a href="/en/bicycles/triathlon-tt">Triathlon/TT</a></li>
+                                        <li><a href="/en/bicycles/kids">Kids</a></li>
+                                        <li><a href="/en/bicycles/speciality">Speciality</a></li>
+                                    </ul>
+                                </li>
+                                <li class="appDropdown displaySubInline">
+                                    <span class="h byBrand hideOnlyMobile">By Brands</span>
+                                    <ul class="list-unstyled linksList hideOnlyMobile">
+                                        <li><a href="/en/bicycles/firefox">Firefox</a></li>
+                                        <li><a href="/en/bicycles/frog">Frog</a></li>
+                                        <li><a href="/en/bicycles/hero-lectro">Hero Lectro</a></li>
+                                        <li><a href="/en/bicycles/hero">Hero</a></li>
+                                        <li><a href="/en/bicycles/waltx">Waltx</a></li>
+                                        <li><a href="/en/bicycles/bianchi">Bianchi</a></li>
+                                        <li><a href="/en/bicycles/polygon">Polygon</a></li>
+                                        <li><a href="/en/bicycles/merida">Merida</a></li>
+                                        <li><a href="/en/bicycles/triad">Triad</a></li>
+                                        <li><a href="/en/bicycles/giant">Giant</a></li>
+                                        <li><a href="/en/bicycles/montra">Montra</a></li>
+                                        <li><a href="/en/bicycles/roadeo">Roadeo</a></li>
+                                        <li><a href="/en/bicycles/cannondale">Cannondale</a></li>
+                                        <li><a href="/en/bicycles/gt">GT</a></li>
+                                        <li><a href="/en/bicycles/fuji">Fuji</a></li>
+                                        <li><a href="/en/bicycles/focus">Focus</a></li>
+                                        <li><a href="/en/bicycles/elife">Elife</a></li>
+                                        <li><a href="/en/bicycles/lightspeed">Lightspeed</a></li>
+                                        <li><a href="/en/bicycles/pedaleze">Pedaleze</a></li>
+                                        <li><a href="/en/bicycles/convolution">Convolution</a></li>
+                                        <li><a href="/en/bicycles/switch">Svtich</a></li>
+                                        <li><a href="/en/bicycles/toutche">Toutche</a></li>
+                                        <li><a href="/en/bicycles/tern">Tern</a></li>
+                                        <li><a href="/en/bicycles/ridley">Ridley</a></li>
+                                        <li><a href="/en/bicycles/schwinn">Schwinn</a></li>
+                                        <li><a href="/en/bicycles/mach-city">Mach City</a></li>
+                                        <li><a href="/en/bicycles/hercules">Hercules</a></li>
+                                        <li><a href="/en/bicycles/bsa">BSA</a></li>
+                                        <li><a href="/en/bicycles/cube">Cube</a></li>
+                                        <li><a href="/en/bicycles/coppernicus">Coppernicus</a></li>
+                                    </ul>
+                                </li>
+                                <div class="clearfix hidden-xs"></div>
+                                <li class="appDropdown">
+                                    <span class="h byFrame hideOnlyMobile">By Frame Material</span>
+                                    <ul class="list-unstyled linksList hideOnlyMobile">
+                                        <li><a href="/en/bicycles/alloy-frame">Alloy</a></li>
+                                        <li><a href="/en/bicycles/aluminium-frame">Aluminium</a></li>
+                                        <li><a href="/en/bicycles/carbon-frame">Carbon</a></li>
+                                        <li><a href="/en/bicycles/chromoly-frame">Chromoly</a></li>
+                                        <li><a href="/en/bicycles/steel-frame">Steel</a></li>
+                                        <li><a href="/en/bicycles/other-frame">Others</a></li>
+                                    </ul>
+                                </li>
+                                <li class="appDropdown displaySubInline">
+                                    <span class="h byWheel hideOnlyMobile">By Wheel Size</span>
+                                    <ul class="list-unstyled linksList hideOnlyMobile">
+                                        <li><a href="/en/bicycles/10-inches-wheel-size">10"</a></li>
+                                        <li><a href="/en/bicycles/12-inches-wheel-size">12"</a></li>
+                                        <li><a href="/en/bicycles/14-inches-wheel-size">14"</a></li>
+                                        <li><a href="/en/bicycles/16-inches-wheel-size">16"</a></li>
+                                        <li><a href="/en/bicycles/18-inches-wheel-size">18"</a></li>
+                                        <li><a href="/en/bicycles/20-inches-wheel-size">20"</a></li>
+                                        <li><a href="/en/bicycles/24-inches-wheel-size">24"</a></li>
+                                        <li><a href="/en/bicycles/26-inches-wheel-size">26"</a></li>
+                                        <li><a href="/en/bicycles/27-5-inches-wheel-size">27.5"</a></li>
+                                        <li><a href="/en/bicycles/28-inches-wheel-size">28"</a></li>
+                                        <li><a href="/en/bicycles/29-inches-wheel-size">29"</a></li>
+                                        <li><a href="/en/bicycles/700c-wheel-size">700c</a></li>
+                                    </ul>
+                                </li>
+                                <li class="appLink allLink">
+                                    <span class="h">
+                                                <a href="/en/bicycles">
+                                                    <span class="subtext hidden-xs">Not sure and <br />like to see our full
+                                                        range?</span>
+                                    <span class="pseudoButton">View All Bicycles</span>
+                                    </a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="appLink aniList aniList-three">
+                        <a href="/en/ebicycles">
+                            <span class="h">E-Bicycles</span>
+                        </a>
+                    </li>
+
+                    <li class="appDropdown macroDropdown aniList aniList-four">
+                        <a href="/en/accessories"><span id="dropAccessories" class="h op">Accessories</span></a>
+                        <div class="subMenuContainer hideOnlyMobile">
+                            <ul class="list-unstyled subList">
+
+                                <li class="appDropdown">
+                                    <span class="h byCatTwo">For The Bicycle</span>
+                                    <ul class="list-unstyled linksList cmbRow hideOnlyMobile">
+                                        <li><a href="/en/accessories/bags-and-car-racks">Bags and Car Racks</a></li>
+                                        <li><a href="/en/accessories/bells-and-horns">Bells and Horns</a></li>
+                                        <li><a href="/en/accessories/bottles-and-bottle-cages">Bottles and Bottle Cages</a>
+                                        </li>
+                                        <li><a href="/en/accessories/components-and-spares">Components and Spares</a></li>
+                                        <li><a href="/en/accessories/gps-and-cyclocomputers">GPS and Cyclocomputers</a></li>
+                                        <li><a href="/en/accessories/lights">Lights</a></li>
+                                        <li><a href="/en/accessories/locks">Locks</a></li>
+                                        <li><a href="/en/accessories/maintenance-and-care">Maintenance and Care</a></li>
+                                        <li><a href="/en/accessories/mudguards-and-protection">Mudguards and Protection</a>
+                                        </li>
+                                        <li><a href="/en/accessories/others">Others</a></li>
+                                        <li><a href="/en/accessories/pumps">Pumps</a></li>
+                                        <li><a href="/en/accessories/stands">Stands</a></li>
+                                        <li><a href="/en/accessories/tires-and-tubes">Tires & Tubes</a></li>
+                                        <li><a href="/en/accessories/tools">Tools</a></li>
+                                        <li><a href="/en/accessories/trainers">Trainers</a></li>
+                                        <li><a href="/en/accessories/wheels">Wheels</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="appDropdown">
+                                    <span class="h byCatTwo">For The Rider</span>
+                                    <ul class="list-unstyled linksList cmbRow hideOnlyMobile">
+                                        <li><a href="/en/accessories/backpacks">Backpacks</a></li>
+                                        <li><a href="/en/accessories/compression-and-inner-wear">Compression and Inner
+                                                        Wear</a></li>
+                                        <li><a href="/en/accessories/eyewear">Eyewear</a></li>
+                                        <li><a href="/en/accessories/footwear">Footwear</a></li>
+                                        <li><a href="/en/accessories/gloves">Gloves</a></li>
+                                        <li><a href="/en/accessories/helmets">Helmets</a></li>
+                                        <li><a href="/en/accessories/jerseys">Jerseys</a></li>
+                                        <li><a href="/en/accessories/recovery-and-body-care">Recovery and Body Care</a></li>
+                                        <li><a href="/en/accessories/shorts">Shorts</a></li>
+                                        <li><a href="/en/accessories/t-shirts">T-shirts</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="appDropdown displaySubInline">
+                                    <span class="h byBrandTwo">By Brands</span>
+                                    <ul class="list-unstyled linksList hideOnlyMobile">
+                                        <li><a href="/en/accessories/2go">2Go</a></li>
+                                        <li><a href="/en/accessories/apace">Apace</a></li>
+                                        <li><a href="/en/accessories/cannondale">Cannondale</a></li>
+                                        <li><a href="/en/accessories/castelli">Castelli</a></li>
+                                        <li><a href="/en/accessories/cateye">Cateye</a></li>
+                                        <li><a href="/en/accessories/firefox">Firefox</a></li>
+                                        <li><a href="/en/accessories/flr">FLR</a></li>
+                                        <li><a href="/en/accessories/garmin">Garmin</a></li>
+                                        <li><a href="/en/accessories/giant">Giant</a></li>
+                                        <li><a href="/en/accessories/hercules">Hercules</a></li>
+                                        <li><a href="/en/accessories/hutchinson">Hutchinson</a></li>
+                                        <li><a href="/en/accessories/merida">Merida</a></li>
+                                        <li><a href="/en/accessories/muc-off">Muc Off</a></li>
+                                        <li><a href="/en/accessories/niterider">Niterider</a></li>
+                                        <li><a href="/en/accessories/wahoo">Wahoo</a></li>
+                                        <li><a href="/en/accessories/xmr">XMR</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="appLink allLink">
+                                    <span class="h">
+                                                <a href="/en/accessories">
+                                                    <span class="subtext hidden-xs">Like to see our full <br />collection of
+                                                        Accessories?</span>
+                                    <span class="pseudoButton">View All Accessories</span>
+                                    </a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="appLink aniList aniList-eight">
+                        <a href="/en/24-hours-dispatch?utm_source=cmb&utm_medium=banner&utm_campaign=nav_24hrsdispatch">
+                            <span class="h">24 Hrs Dispatch</span>
+                        </a>
+                    </li>
+
+                    <li class="appLink aniList aniList-six">
+                        <a href="/en/woc">
+                            <span class="h">Reviews</span>
+                        </a>
+                    </li>
+
+                    <li class="appLink aniList aniList-seven visible-xs">
+                        <a href="/en/track-your-order">
+                            <span class="h">Track Your Order</span>
+                        </a>
+                    </li>
+
+                    <li class="appLink aniList aniList-eight visible-xs">
+                        <a href="/en/help-center">
+                            <span class="h">Customer Support</span>
+                        </a>
+                    </li>
+
+
+                    <li class="appLink saleBand aniList aniList-eight hidden-xs">
+                        <a href="/en/clearance-sale?utm_source=cmb&utm_medium=banner&utm_campaign=nav_clearance_sale_link">
+                            <span class="h">Clearance Sale</span>
+                        </a>
+                    </li>
+
+                    <li class="appLink covidLink aniList aniList-eight visible-xs">
+                        <a href="/en/choosemybicycle-com-response-to-covid-19">
+                            <span class="h">CMB's Covid 19 Response</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="searchBar hidden-xs hiddenTransform" id="searchBar">
+                <button class="defaultButton secondaryBlack visible-xs closerButton" id="closeSearchBar">
+                            <img src="https://choosemybicycle.s3.ap-south-1.amazonaws.com/static/icons/buttons/x-mark-black.svg"
+                                class="img-responsive center-block" alt="Close" title="Close" />
+                        </button>
+                <form class="form searchForm" id="appNavSearchForm" autocomplete="off">
+                    <div class="form-group positionRelative">
+                        <input type="text" class="defaultInput" id="appSearch" name="appSearch" placeholder="Search on ChooseMyBicycle.com" autocomplete="off" />
+                        <div class="errorMessage hiddenTransform">Please enter your query. (Min 3 Characters)</div>
+                    </div>
+                </form>
+                <div class="appSearchResults hide" id="appSearchResults">
+                    <div class="hide" id="productParentGroup"></div>
+                    <div class="hide" id="brandParentGroup"></div>
+                    <div class="hide" id="reviewParentGroup"></div>
+                    <div class="hide" id="newsParentGroup"></div>
+
+                </div>
+                <a href="" class="defaultButton primaryBlack resultsPageLink hide hiddenTransform" id="resultsPageLink" type="button">View More Results</a>
+            </div>
+        </div>
+
+
+
+
+        <div class="brandPromiseBar hide" id="brandPromiseBar">
+            <div class="bpItem one">
+                Fully Fitted and Ready To Ride Bicycles
+            </div>
+            <div class="bpItem two">
+                Free Shipping Available*
+            </div>
+            <div class="bpItem three">
+                Guaranteed Offers and Deals
+            </div>
+            <div class="bpItem four">
+                Original Products with Manufacturer's Warranty
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
