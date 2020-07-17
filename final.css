@@ -620,7 +620,7 @@ h4 {
     }
     .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav li.userAccount span.h {
         color: #666;
-        font-weight: 500
+        font-weight: 200
     }
     .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav li.userAccount span.h a {
         color: #00b256
@@ -641,7 +641,7 @@ h4 {
     }
     .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav li.macroDropdown .subMenuContainer .subList li span.h {
         color: #666;
-        font-weight: 400
+        font-weight: 200
     }
     .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav li.macroDropdown .subMenuContainer .subList li .linksList {
         margin: 15px -20px -15px;
@@ -677,7 +677,7 @@ h4 {
     }
     .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav .appLink.saleBand span.h {
         color: #fff;
-        font-weight: 600
+        font-weight: 200
     }
     .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav .appLink.covidLink {
         padding-left: 39px;
@@ -1070,49 +1070,6 @@ h4 {
     }
 }
 
-@media only screen and (min-width:1200px) {
-    .appControls .cmbRow.controlRow {
-        position: relative;
-        z-index: 15
-    }
-    .appNavParent .cmbRow.topRow {
-        max-width: 1240px;
-        margin: 0 auto;
-        position: relative
-    }
-    .appNavParent .cmbRow.topRow .appIcon {
-        left: 20px;
-        top: 12px;
-        height: 64px;
-        overflow: hidden
-    }
-    .appNavParent .cmbRow.topRow .searchBar {
-        width: calc(100% - 770px)
-    }
-    .appNavParent .cmbRow.topRow .searchBar .appSearchResults {
-        width: 490px;
-        height: 71vh
-    }
-    .appNavParent .cmbRow.topRow .searchBar .resultsPageLink {
-        width: 490px;
-        bottom: calc(-71vh - 44px)
-    }
-    .appNavParent .cmbRow.topRow .appNavOptions {
-        width: 730px;
-        margin-left: 36px
-    }
-    .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav {
-        text-align: left;
-        margin-left: 75px
-    }
-    .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav li.macroDropdown:hover span.h:after {
-        display: block
-    }
-    .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav li.macroDropdown:hover .subMenuContainer {
-        display: block
-    }
-}
-
 @keyframes rotateLoaderCircle {
     from {
         transform: translate(-50%, -50%) rotate(0)
@@ -1156,6 +1113,10 @@ h4 {
     to {
         transform: translate(-50%, -50%) rotate(360deg)
     }
+}
+
+.defaultInput {
+    border-radius: 20px !important;
 }
 
 a.defaultButton,
@@ -1763,7 +1724,7 @@ input[type=search]::-webkit-search-decoration {
 }
 
 @font-face {
-    font-family: glyphicons halflings;
+    font-family: monospace;
     src: url(../fonts/glyphicons-halflings-regular.eot);
     src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
 }
@@ -1787,7 +1748,7 @@ html {
 }
 
 body {
-    font-family: helvetica neue, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -1928,7 +1889,7 @@ ul ul {
 }
 
 code {
-    font-family: Menlo, Monaco, Consolas, courier new, monospace
+    font-family: monospace
 }
 
 code {
@@ -2152,4 +2113,8 @@ button.close {
     100% {
         opacity: 0
     }
+}
+
+.carousel {
+    height: 50vh !important;
 }
