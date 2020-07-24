@@ -336,70 +336,10 @@ h4 {
     background-size: 20px;
 }
 
+
+/* Remove the search bar */
+
 @media only screen and (max-width: 767px) {
-    .appNavParent .cmbRow.topRow .searchBar {
-        padding: 0;
-        transition-property: all;
-        -moz-transition-property: all;
-        -webkit-transition-property: all;
-        -o-transition-property: all;
-        -ms-transition-property: all;
-        transition-duration: 0.15s;
-        -webkit-transition-duration: 0.15s;
-        -ms-transition-duration: 0.15s;
-        -moz-transition-duration: 0.15s;
-        -o-transition-duration: 0.15s;
-        transition-timing-function: linear;
-        -webkit-transition-timing-function: linear;
-        -o-transition-timing-function: linear;
-        -ms-transition-timing-function: linear;
-        -moz-transition-timing-function: linear;
-        transition: all 0.15s linear;
-        --webkit-transition: all 0.15s linear;
-        --o-transition: all 0.15s linear;
-        --ms-transition: all 0.15s linear;
-        --moz-transition: all 0.15s linear;
-    }
-    .appNavParent .cmbRow.topRow .searchBar .form-group {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 15px;
-        transition-property: all;
-        -moz-transition-property: all;
-        -webkit-transition-property: all;
-        -o-transition-property: all;
-        -ms-transition-property: all;
-        transition-duration: 0.5s;
-        -webkit-transition-duration: 0.5s;
-        -ms-transition-duration: 0.5s;
-        -moz-transition-duration: 0.5s;
-        -o-transition-duration: 0.5s;
-        transition-timing-function: ease;
-        -webkit-transition-timing-function: ease;
-        -o-transition-timing-function: ease;
-        -ms-transition-timing-function: ease;
-        -moz-transition-timing-function: ease;
-        transition: all 0.5s ease;
-        --webkit-transition: all 0.5s ease;
-        --o-transition: all 0.5s ease;
-        --ms-transition: all 0.5s ease;
-        --moz-transition: all 0.5s ease;
-        transition-delay: 0.35s;
-    }
-    .appNavParent .cmbRow.topRow .searchBar .appSearchResults {
-        padding: 0 0 50px;
-    }
-    .appNavParent .cmbRow.topRow .searchBar.hiddenTransform {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateX(-25px);
-        -webkit-transform: translateX(-25px);
-    }
-    .appNavParent .cmbRow.topRow .searchBar.hiddenTransform .form-group {
-        width: 0;
-        opacity: 0;
-        visibility: hidden;
-    }
     .appNavParent .cmbRow.topRow .appNavOptions {
         transition-property: all;
         -moz-transition-property: all;
@@ -670,16 +610,7 @@ h4 {
         padding: 15px 20px !important;
         color: #000;
     }
-    .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav .appLink.saleBand {
-        background: #00b256;
-        padding: 15px 20px;
-        border: 0 !important;
-    }
-    .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav .appLink.saleBand span.h {
-        color: #fff;
-        font-weight: 200;
-    }
-    .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav .appLink.covidLink {
+    .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav .appLink {
         padding-left: 39px;
         background: #fff url(https://choosemybicycle.s3.ap-south-1.amazonaws.com/cmb-documentation-tncs/covid-shield-888888.svg) no-repeat 20px center;
         background-size: 14px;
@@ -758,7 +689,7 @@ h4 {
         margin-top: 4px;
         vertical-align: middle;
     }
-    .appNavParent .cmbRow.topRow .appControls .cmbRow .segment.trackYourOrder {
+    .appNavParent .cmbRow.topRow .appControls .cmbRow .segment {
         width: 100px;
     }
     .appNavParent .cmbRow.topRow .appControls .cmbRow .segment.support {
@@ -767,69 +698,7 @@ h4 {
     .appNavParent .cmbRow.topRow .appControls .cmbRow .segment.login {
         width: 141px;
     }
-    .appNavParent .cmbRow.topRow .appControls .cmbRow .segment.login .loginPrompter {
-        background: #00b256;
-        position: absolute;
-        top: 42px;
-        right: 15px;
-        padding: 15px;
-        width: 300px;
-        z-index: 60;
-        box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.15);
-        -webkit-box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.15);
-        -moz-box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.15);
-        transition-property: all;
-        -moz-transition-property: all;
-        -webkit-transition-property: all;
-        -o-transition-property: all;
-        -ms-transition-property: all;
-        transition-duration: 0.5s;
-        -webkit-transition-duration: 0.5s;
-        -ms-transition-duration: 0.5s;
-        -moz-transition-duration: 0.5s;
-        -o-transition-duration: 0.5s;
-        transition-timing-function: ease;
-        -webkit-transition-timing-function: ease;
-        -o-transition-timing-function: ease;
-        -ms-transition-timing-function: ease;
-        -moz-transition-timing-function: ease;
-        transition: all 0.5s ease;
-        --webkit-transition: all 0.5s ease;
-        --o-transition: all 0.5s ease;
-        --ms-transition: all 0.5s ease;
-        --moz-transition: all 0.5s ease;
-    }
-    .appNavParent .cmbRow.topRow .appControls .cmbRow .segment.login .loginPrompter p {
-        font-size: 1.25rem;
-        font-weight: 500;
-        color: #fff;
-        line-height: 17px;
-        text-align: left;
-    }
-    .appNavParent .cmbRow.topRow .appControls .cmbRow .segment.login .loginPrompter .defaultButton {
-        height: auto;
-        line-height: 30px;
-        border-color: #fff;
-        font-size: 1.2rem;
-    }
-    .appNavParent .cmbRow.topRow .appControls .cmbRow .segment.login .loginPrompter.hiddenTransform {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(20px);
-        -webkit-transform: translateY(20px);
-    }
-    .appNavParent .cmbRow.topRow .appControls .cmbRow .segment.login .loginPrompter:before {
-        content: "";
-        position: absolute;
-        top: -10px;
-        right: 15px;
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid #00b256;
-    }
-    .appNavParent .cmbRow.topRow .appControls .cmbRow .segment.covid19 {
+    .appNavParent .cmbRow.topRow .appControls .cmbRow .segment {
         width: auto;
     }
     .appNavParent .cmbRow.topRow .appControls .cmbRow .segment.cart span {
@@ -925,18 +794,12 @@ h4 {
         color: #fff;
         display: inline-block;
     }
-    .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav li.saleBand {
-        background: #00b256;
-        height: 40px;
-        line-height: 11px;
-        margin-top: 3px;
-    }
     .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav li.macroDropdown span.h {
         position: relative;
     }
     .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav li.macroDropdown span.h.op:after {
         display: none;
-        content: "";
+        content: '';
         position: absolute;
         bottom: -15px;
         left: -15px;
@@ -1010,6 +873,9 @@ h4 {
         background: #000;
         padding: 0;
     }
+    .brandPromiseBar {
+        display: hidden;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1026,14 +892,6 @@ h4 {
     }
     .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav li.macroDropdown .subMenuContainer {
         width: 800px;
-    }
-    .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav li.saleBand {
-        font-size: 1.1rem;
-        margin-top: 4px;
-        line-height: 17px;
-    }
-    .appNavParent .cmbRow.topRow .appNavOptions .topLevelNav li.saleBand a {
-        padding: 12px 10px;
     }
     .appNavParent .cmbRow.topRow .searchBar {
         float: right;
@@ -1061,6 +919,9 @@ h4 {
     .appNavParent .cmbRow.menuRow {
         max-width: 1200px;
         margin: 0 auto;
+    }
+    .brandPromiseBar {
+        display: hidden;
     }
 }
 
@@ -1251,7 +1112,7 @@ button.defaultButton.primaryGreen {
 }
 
 .form-group .errorMessage:before {
-    content: "";
+    content: '';
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
@@ -1269,7 +1130,7 @@ button.defaultButton.primaryGreen {
 }
 
 .form-group input:checked~.customCheckBox:after {
-    content: "";
+    content: '';
     border: solid #fff;
     border-width: 0 3px 3px 0;
 }
@@ -1420,7 +1281,7 @@ div {
 
 .cmbRow:after,
 .cmbRow:before {
-    content: "";
+    content: '';
     display: table;
 }
 
@@ -1637,9 +1498,9 @@ button {
 }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
     -webkit-appearance: button;
     cursor: pointer;
 }
@@ -1659,28 +1520,28 @@ input {
     line-height: normal;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
     height: auto;
 }
 
-input[type="search"] {
+input[type='search'] {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     -webkit-appearance: textfield;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
     -webkit-appearance: none;
 }
 
@@ -1699,11 +1560,11 @@ input[type="search"]::-webkit-search-decoration {
         text-decoration: underline;
     }
     a[href]:after {
-        content: " (" attr(href) ")";
+        content: ' (' attr(href) ')';
     }
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
+    a[href^='#']:after,
+    a[href^='javascript:']:after {
+        content: '';
     }
     img {
         page-break-inside: avoid;
@@ -1726,7 +1587,7 @@ input[type="search"]::-webkit-search-decoration {
 @font-face {
     font-family: monospace;
     src: url(../fonts/glyphicons-halflings-regular.eot);
-    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(../fonts/glyphicons-halflings-regular.woff2) format("woff2"), url(../fonts/glyphicons-halflings-regular.woff) format("woff"), url(../fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
 }
 
 * {
@@ -1788,7 +1649,7 @@ img {
     height: auto;
 }
 
-[role="button"] {
+[role='button'] {
     cursor: pointer;
 }
 
@@ -1900,35 +1761,35 @@ code {
     border-radius: 4px;
 }
 
-input[type="search"] {
+input[type='search'] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
     margin: 4px 0 0;
     line-height: normal;
 }
 
-input[type="file"] {
+input[type='file'] {
     display: block;
 }
 
-input[type="range"] {
+input[type='range'] {
     display: block;
     width: 100%;
 }
 
-input[type="checkbox"]:focus,
-input[type="file"]:focus,
-input[type="radio"]:focus {
+input[type='checkbox']:focus,
+input[type='file']:focus,
+input[type='radio']:focus {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px;
 }
 
-input[type="search"] {
+input[type='search'] {
     -webkit-appearance: none;
 }
 
@@ -1936,8 +1797,8 @@ input[type="search"] {
     margin-bottom: 15px;
 }
 
-input[type="checkbox"][disabled],
-input[type="radio"][disabled] {
+input[type='checkbox'][disabled],
+input[type='radio'][disabled] {
     cursor: not-allowed;
 }
 
@@ -1954,7 +1815,7 @@ input[type="radio"][disabled] {
     border-collapse: separate;
 }
 
-.input-group[class*="col-"] {
+.input-group[class*='col-'] {
     float: none;
     padding-right: 0;
     padding-left: 0;
@@ -2050,7 +1911,7 @@ button.close {
 .nav:after,
 .nav:before {
     display: table;
-    content: " ";
+    content: ' ';
 }
 
 .clearfix:after,
@@ -2140,7 +2001,7 @@ button.close {
 } */
 
 body {
-    margin: 0
+    margin: 0;
 }
 
 
@@ -2150,511 +2011,483 @@ body {
 } */
 
 img {
-    border-style: none
-}
-
-[type=reset],
-[type=submit],
-html [type=button] {
-    -webkit-appearance: button
-}
-
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
     border-style: none;
-    padding: 0
 }
 
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-    outline: 1px dotted ButtonText
+[type='reset'],
+[type='submit'],
+html [type='button'] {
+    -webkit-appearance: button;
 }
 
-[type=checkbox],
-[type=radio] {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+[type='checkbox'],
+[type='radio'] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0
+    padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-    height: auto
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+    height: auto;
 }
 
-[type=search] {
+[type='search'] {
     -webkit-appearance: textfield;
-    outline-offset: -2px
+    outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-cancel-button,
-[type=search]::-webkit-search-decoration {
-    -webkit-appearance: none
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
 }
 
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
-    font: inherit
+    font: inherit;
 }
 
 [hidden] {
-    display: none
+    display: none;
 }
 
 html {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 *,
 :after,
 :before {
     -webkit-box-sizing: inherit;
-    box-sizing: inherit
+    box-sizing: inherit;
 }
 
 a {
     color: #039be5;
     text-decoration: none;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
 }
 
 @-webkit-keyframes indeterminate {
     0% {
         left: -35%;
-        right: 100%
+        right: 100%;
     }
     60% {
         left: 100%;
-        right: -90%
+        right: -90%;
     }
     100% {
         left: 100%;
-        right: -90%
+        right: -90%;
     }
 }
 
 @keyframes indeterminate {
     0% {
         left: -35%;
-        right: 100%
+        right: 100%;
     }
     60% {
         left: 100%;
-        right: -90%
+        right: -90%;
     }
     100% {
         left: 100%;
-        right: -90%
+        right: -90%;
     }
 }
 
 @-webkit-keyframes indeterminate-short {
     0% {
         left: -200%;
-        right: 100%
+        right: 100%;
     }
     60% {
         left: 107%;
-        right: -8%
+        right: -8%;
     }
     100% {
         left: 107%;
-        right: -8%
+        right: -8%;
     }
 }
 
 @keyframes indeterminate-short {
     0% {
         left: -200%;
-        right: 100%
+        right: 100%;
     }
     60% {
         left: 107%;
-        right: -8%
+        right: -8%;
     }
     100% {
         left: 107%;
-        right: -8%
+        right: -8%;
     }
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 html {
     /* line-height: 1.5; */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     font-weight: 400;
-    color: rgba(0, 0, 0, .87)
+    color: rgba(0, 0, 0, 0.87);
 }
-
-@media only screen and (min-width:0) {
-    html {
-        /* font-size: 14px */
-    }
-}
-
-@media only screen and (min-width:992px) {
-    html {
-        /* font-size: 14.5px */
-    }
-}
-
-@media only screen and (min-width:1200px) {
-    html {
-        /* font-size: 15px */
-    }
-}
-
-
-/*!
- * Waves v0.6.0
- * http://fian.my.id/Waves
- *
- * Copyright 2014 Alfiana E. Sibuea and other contributors
- * Released under the MIT license
- * https://github.com/fians/Waves/blob/master/LICENSE
- */
 
 ::-webkit-input-placeholder {
-    color: #d1d1d1
+    color: #d1d1d1;
 }
 
 ::-moz-placeholder {
-    color: #d1d1d1
+    color: #d1d1d1;
 }
 
 :-ms-input-placeholder {
-    color: #d1d1d1
+    color: #d1d1d1;
 }
 
 ::-ms-input-placeholder {
-    color: #d1d1d1
+    color: #d1d1d1;
 }
 
 ::placeholder {
-    color: #d1d1d1
+    color: #d1d1d1;
 }
 
-[type=radio]:checked,
-[type=radio]:not(:checked) {
+[type='radio']:checked,
+[type='radio']:not(:checked) {
     position: absolute;
     opacity: 0;
-    pointer-events: none
+    pointer-events: none;
 }
 
-[type=checkbox]:checked,
-[type=checkbox]:not(:checked) {
+[type='checkbox']:checked,
+[type='checkbox']:not(:checked) {
     position: absolute;
     opacity: 0;
-    pointer-events: none
+    pointer-events: none;
 }
 
 @-webkit-keyframes container-rotate {
     to {
-        -webkit-transform: rotate(360deg)
+        -webkit-transform: rotate(360deg);
     }
 }
 
 @keyframes container-rotate {
     to {
         -webkit-transform: rotate(360deg);
-        transform: rotate(360deg)
+        transform: rotate(360deg);
     }
 }
 
 @-webkit-keyframes fill-unfill-rotate {
     12.5% {
-        -webkit-transform: rotate(135deg)
+        -webkit-transform: rotate(135deg);
     }
     25% {
-        -webkit-transform: rotate(270deg)
+        -webkit-transform: rotate(270deg);
     }
     37.5% {
-        -webkit-transform: rotate(405deg)
+        -webkit-transform: rotate(405deg);
     }
     50% {
-        -webkit-transform: rotate(540deg)
+        -webkit-transform: rotate(540deg);
     }
     62.5% {
-        -webkit-transform: rotate(675deg)
+        -webkit-transform: rotate(675deg);
     }
     75% {
-        -webkit-transform: rotate(810deg)
+        -webkit-transform: rotate(810deg);
     }
     87.5% {
-        -webkit-transform: rotate(945deg)
+        -webkit-transform: rotate(945deg);
     }
     to {
-        -webkit-transform: rotate(1080deg)
+        -webkit-transform: rotate(1080deg);
     }
 }
 
 @keyframes fill-unfill-rotate {
     12.5% {
         -webkit-transform: rotate(135deg);
-        transform: rotate(135deg)
+        transform: rotate(135deg);
     }
     25% {
         -webkit-transform: rotate(270deg);
-        transform: rotate(270deg)
+        transform: rotate(270deg);
     }
     37.5% {
         -webkit-transform: rotate(405deg);
-        transform: rotate(405deg)
+        transform: rotate(405deg);
     }
     50% {
         -webkit-transform: rotate(540deg);
-        transform: rotate(540deg)
+        transform: rotate(540deg);
     }
     62.5% {
         -webkit-transform: rotate(675deg);
-        transform: rotate(675deg)
+        transform: rotate(675deg);
     }
     75% {
         -webkit-transform: rotate(810deg);
-        transform: rotate(810deg)
+        transform: rotate(810deg);
     }
     87.5% {
         -webkit-transform: rotate(945deg);
-        transform: rotate(945deg)
+        transform: rotate(945deg);
     }
     to {
         -webkit-transform: rotate(1080deg);
-        transform: rotate(1080deg)
+        transform: rotate(1080deg);
     }
 }
 
 @-webkit-keyframes blue-fade-in-out {
     from {
-        opacity: 1
+        opacity: 1;
     }
     25% {
-        opacity: 1
+        opacity: 1;
     }
     26% {
-        opacity: 0
+        opacity: 0;
     }
     89% {
-        opacity: 0
+        opacity: 0;
     }
     90% {
-        opacity: 1
+        opacity: 1;
     }
     100% {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @keyframes blue-fade-in-out {
     from {
-        opacity: 1
+        opacity: 1;
     }
     25% {
-        opacity: 1
+        opacity: 1;
     }
     26% {
-        opacity: 0
+        opacity: 0;
     }
     89% {
-        opacity: 0
+        opacity: 0;
     }
     90% {
-        opacity: 1
+        opacity: 1;
     }
     100% {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @-webkit-keyframes red-fade-in-out {
     from {
-        opacity: 0
+        opacity: 0;
     }
     15% {
-        opacity: 0
+        opacity: 0;
     }
     25% {
-        opacity: 1
+        opacity: 1;
     }
     50% {
-        opacity: 1
+        opacity: 1;
     }
     51% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
 @keyframes red-fade-in-out {
     from {
-        opacity: 0
+        opacity: 0;
     }
     15% {
-        opacity: 0
+        opacity: 0;
     }
     25% {
-        opacity: 1
+        opacity: 1;
     }
     50% {
-        opacity: 1
+        opacity: 1;
     }
     51% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
 @-webkit-keyframes yellow-fade-in-out {
     from {
-        opacity: 0
+        opacity: 0;
     }
     40% {
-        opacity: 0
+        opacity: 0;
     }
     50% {
-        opacity: 1
+        opacity: 1;
     }
     75% {
-        opacity: 1
+        opacity: 1;
     }
     76% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
 @keyframes yellow-fade-in-out {
     from {
-        opacity: 0
+        opacity: 0;
     }
     40% {
-        opacity: 0
+        opacity: 0;
     }
     50% {
-        opacity: 1
+        opacity: 1;
     }
     75% {
-        opacity: 1
+        opacity: 1;
     }
     76% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
 @-webkit-keyframes green-fade-in-out {
     from {
-        opacity: 0
+        opacity: 0;
     }
     65% {
-        opacity: 0
+        opacity: 0;
     }
     75% {
-        opacity: 1
+        opacity: 1;
     }
     90% {
-        opacity: 1
+        opacity: 1;
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
 @keyframes green-fade-in-out {
     from {
-        opacity: 0
+        opacity: 0;
     }
     65% {
-        opacity: 0
+        opacity: 0;
     }
     75% {
-        opacity: 1
+        opacity: 1;
     }
     90% {
-        opacity: 1
+        opacity: 1;
     }
     100% {
-        opacity: 0
+        opacity: 0;
     }
 }
 
 @-webkit-keyframes left-spin {
     from {
-        -webkit-transform: rotate(130deg)
+        -webkit-transform: rotate(130deg);
     }
     50% {
-        -webkit-transform: rotate(-5deg)
+        -webkit-transform: rotate(-5deg);
     }
     to {
-        -webkit-transform: rotate(130deg)
+        -webkit-transform: rotate(130deg);
     }
 }
 
 @keyframes left-spin {
     from {
         -webkit-transform: rotate(130deg);
-        transform: rotate(130deg)
+        transform: rotate(130deg);
     }
     50% {
         -webkit-transform: rotate(-5deg);
-        transform: rotate(-5deg)
+        transform: rotate(-5deg);
     }
     to {
         -webkit-transform: rotate(130deg);
-        transform: rotate(130deg)
+        transform: rotate(130deg);
     }
 }
 
 @-webkit-keyframes right-spin {
     from {
-        -webkit-transform: rotate(-130deg)
+        -webkit-transform: rotate(-130deg);
     }
     50% {
-        -webkit-transform: rotate(5deg)
+        -webkit-transform: rotate(5deg);
     }
     to {
-        -webkit-transform: rotate(-130deg)
+        -webkit-transform: rotate(-130deg);
     }
 }
 
 @keyframes right-spin {
     from {
         -webkit-transform: rotate(-130deg);
-        transform: rotate(-130deg)
+        transform: rotate(-130deg);
     }
     50% {
         -webkit-transform: rotate(5deg);
-        transform: rotate(5deg)
+        transform: rotate(5deg);
     }
     to {
         -webkit-transform: rotate(-130deg);
-        transform: rotate(-130deg)
+        transform: rotate(-130deg);
     }
 }
 
 @-webkit-keyframes fade-out {
     from {
-        opacity: 1
+        opacity: 1;
     }
     to {
-        opacity: 0
+        opacity: 0;
     }
 }
 
 @keyframes fade-out {
     from {
-        opacity: 1
+        opacity: 1;
     }
     to {
-        opacity: 0
+        opacity: 0;
     }
 }
 
 .slider {
     position: relative;
     height: 400px;
-    width: 100%
+    width: 100%;
 }
 
 .carousel {
@@ -2667,12 +2500,12 @@ html {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%
+    transform-origin: 0 50%;
 }
 
 .carousel.carousel-slider {
     top: 0;
-    left: 0
+    left: 0;
 }
 
 .carousel.carousel-slider .carousel-item {
@@ -2681,7 +2514,7 @@ html {
     min-height: 400px;
     position: absolute;
     top: 0;
-    left: 0
+    left: 0;
 }
 
 .carousel .carousel-item {
@@ -2690,28 +2523,28 @@ html {
     height: 200px;
     position: absolute;
     top: 0;
-    left: 0
+    left: 0;
 }
 
 .carousel .carousel-item>img {
-    width: 100%
+    width: 100%;
 }
 
 @-webkit-keyframes pulse-animation {
     0% {
         opacity: 1;
         -webkit-transform: scale(1);
-        transform: scale(1)
+        transform: scale(1);
     }
     50% {
         opacity: 0;
         -webkit-transform: scale(1.5);
-        transform: scale(1.5)
+        transform: scale(1.5);
     }
     100% {
         opacity: 0;
         -webkit-transform: scale(1.5);
-        transform: scale(1.5)
+        transform: scale(1.5);
     }
 }
 
@@ -2719,16 +2552,16 @@ html {
     0% {
         opacity: 1;
         -webkit-transform: scale(1);
-        transform: scale(1)
+        transform: scale(1);
     }
     50% {
         opacity: 0;
         -webkit-transform: scale(1.5);
-        transform: scale(1.5)
+        transform: scale(1.5);
     }
     100% {
         opacity: 0;
         -webkit-transform: scale(1.5);
-        transform: scale(1.5)
+        transform: scale(1.5);
     }
 }
